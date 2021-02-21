@@ -1,0 +1,173 @@
+@import '../Main.scss';
+
+.about-section {
+
+    background-color: $firstBgColor;
+    padding-top: 100px;
+    .about-header {
+
+        display: flex;
+        justify-content: space-between;
+        @include section();
+        align-items: center;
+        .title-about {
+            width: 50%;
+
+        }
+
+        .desc-txt {
+            color: #BFBFBF;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+    .ab-txt {
+        font-size: 50px;
+        color: #ffffff;
+        font-weight: bold;
+
+    }
+    .about-col-header {
+        position: relative;
+        .decoratelLine {
+            width: 80%;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .logo-about-header,
+    .title-about {
+        z-index: 150;
+    }
+
+}
+
+.about-smart {
+
+    height: 100%;
+    align-items: center;
+    display: flex;
+    background-color: #2A3136;
+    width: 100%;
+    .about-smart-this {
+        display: flex;
+        justify-content: space-between;
+        @include section();
+
+    }
+
+    .about-text-info-smart {
+        width: 50%;
+        p {
+            color: #D1D1D1;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            margin-top: 15px;
+
+        }
+    }
+}
+.img-smart-code {
+    margin-top: 60px;
+    width: 40%;
+    background-color: #FFDA3A;
+    position: relative;
+    min-width: 350px;
+    height: 300px;
+    .courseNarek {
+        position: absolute;
+        top: -90px;
+        left: 80px;
+
+    }
+    .learncourse {
+        position: absolute;
+        bottom: -140px;
+        left: -50px;
+    }
+
+}
+@media screen and(max-width: 1200px) {
+
+    .img-smart-code {
+        width: 60%;
+        .courseNarek {
+            position: absolute;
+            left: 150px;
+        }
+        .learncourse {
+            left: -60px;
+        }
+    }
+
+    .about-smart {
+        .about-smart-this {
+            display: flex;
+            flex-direction: column;
+        }
+        .about-text-info-smart,
+        .img-smart-code {
+            margin: 15% auto;
+        }
+        .about-text-info-smart {
+            width: 100%;
+            margin: 15% auto;
+            p {
+                font-size: 22px;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 800px) {
+
+    .about-smart {
+        .img-smart-code {
+            height: 150px;
+            min-width: 250px;
+
+            .courseNarek {
+                position: absolute;
+                top: -60px;
+                left: 90px;
+                width: 80%;
+            }
+            .learncourse {
+                width: 80%;
+                bottom: -60px;
+                left: -30px;
+            }
+        }
+        .about-text-info-smart {
+            width: 100%;
+            margin: 30% auto;
+        }
+    }
+    .about-header {
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about-section {
+        .about-header {
+            display: flex;
+            flex-direction: column-reverse;
+            .title-about {
+                width: 100%;
+                text-align: center;
+            }
+            .ab-txt {
+                font-size: 30px;
+            }
+        }
+    }
+    .logo-about-header {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,3 @@
+const HEADER_CLASSES = 'HEADER_CLASSES';
+
+export {HEADER_CLASSES};
